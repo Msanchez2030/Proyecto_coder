@@ -1,0 +1,554 @@
+* {
+  font-family: Times; }
+
+.body {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  max-width: 100%; }
+
+/*index*/
+.GridIndex {
+  display: grid;
+  grid-template-areas: "header header" "titulo titulo" "cuerpo cuerpo" "footer footer"; }
+  .GridIndex .GridIndex_header {
+    grid-area: header;
+    background-color: #C80DDE;
+    height: 50px;
+    width: auto; }
+    .GridIndex .GridIndex_header #input-search {
+      margin-top: 10px;
+      margin-left: 30px;
+      width: 40%;
+      height: 30px;
+      font-size: 20px;
+      text-indent: 10px;
+      display: inline-block;
+      background-color: #D0C6D5;
+      border-radius: 20px; }
+    .GridIndex .GridIndex_header .content-search {
+      width: 100%;
+      display: none; }
+      .GridIndex .GridIndex_header .content-search a {
+        color: #fff;
+        text-decoration: none; }
+      .GridIndex .GridIndex_header .content-search td {
+        padding: 5px;
+        height: 30px;
+        display: block; }
+      .GridIndex .GridIndex_header .content-search td:hover {
+        background: rgba(0, 0, 0, 0.3); }
+      .GridIndex .GridIndex_header .content-search .content-table {
+        position: relative;
+        left: 20px;
+        width: 40%;
+        max-height: 300px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-left: 10px;
+        padding-left: 10px;
+        overflow-y: visible;
+        overflow-x: hidden; }
+        .GridIndex .GridIndex_header .content-search .content-table .tabla-buscador table {
+          width: 100%; }
+        .GridIndex .GridIndex_header .content-search .content-table .tabla-buscador thead {
+          display: none; }
+      .GridIndex .GridIndex_header .content-search #table_length, .GridIndex .GridIndex_header .content-search #table_filter, .GridIndex .GridIndex_header .content-search #table_info, .GridIndex .GridIndex_header .content-search #table_paginate {
+        display: none; }
+    .GridIndex .GridIndex_header .iconoMenu {
+      font-size: 30px;
+      cursor: pointer;
+      display: none; }
+    .GridIndex .GridIndex_header #imenu {
+      display: none; }
+    .GridIndex .GridIndex_header .menu {
+      float: right;
+      height: 50px;
+      display: inline-block; }
+      .GridIndex .GridIndex_header .menu ul {
+        height: 50px;
+        background-color: #C80DDE;
+        display: flex;
+        list-style: none; }
+        .GridIndex .GridIndex_header .menu ul li {
+          height: 50px;
+          display: block;
+          padding: 10px 20px; }
+          .GridIndex .GridIndex_header .menu ul li ul {
+            height: auto;
+            width: 130px;
+            display: none;
+            position: absolute;
+            right: 300px;
+            top: 560px; }
+            .GridIndex .GridIndex_header .menu ul li ul li {
+              padding: 5px;
+              text-align: center;
+              width: 130px;
+              height: auto;
+              position: relative;
+              right: 40px; }
+        .GridIndex .GridIndex_header .menu ul li:hover {
+          background: rgba(0, 0, 0, 0.3); }
+        .GridIndex .GridIndex_header .menu ul li:hover ul {
+          display: block;
+          position: absolute; }
+      .GridIndex .GridIndex_header .menu a {
+        color: black;
+        text-decoration: none; }
+  .GridIndex .GridIndex_titulo {
+    grid-area: titulo; }
+    .GridIndex .GridIndex_titulo h1 {
+      float: right; }
+  .GridIndex .GridIndex_cuerpo {
+    grid-area: cuerpo;
+    display: flex;
+    flex-direction: row;
+    margin: 10px; }
+    .GridIndex .GridIndex_cuerpo .GridIndex_izquierda {
+      width: 50%;
+      padding: 7%; }
+    .GridIndex .GridIndex_cuerpo .GridIndex_derecha {
+      display: flex;
+      flex-direction: column; }
+  .GridIndex .GridIndex_footer {
+    grid-area: footer;
+    background-color: #C80DDE;
+    height: 58px; }
+    .GridIndex .GridIndex_footer ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 5px; }
+      .GridIndex .GridIndex_footer ul li {
+        display: inline; }
+
+/*viento*/
+.GridVenta {
+  display: grid;
+  grid-template-areas: "header header" "titulo titulo" "cuerpo cuerpo" "footer footer"; }
+  .GridVenta .GridVenta_header {
+    grid-area: header;
+    background-color: #C80DDE;
+    height: 50px;
+    width: auto; }
+    .GridVenta .GridVenta_header #input-search {
+      margin-top: 10px;
+      margin-left: 30px;
+      width: 40%;
+      height: 30px;
+      font-size: 20px;
+      text-indent: 10px;
+      display: inline-block;
+      background-color: #D0C6D5;
+      border-radius: 20px; }
+    .GridVenta .GridVenta_header .content-search {
+      width: 100%;
+      display: none; }
+      .GridVenta .GridVenta_header .content-search a {
+        color: #fff;
+        text-decoration: none; }
+      .GridVenta .GridVenta_header .content-search td {
+        padding: 5px;
+        height: 30px;
+        display: block; }
+      .GridVenta .GridVenta_header .content-search td:hover {
+        background: rgba(0, 0, 0, 0.3); }
+      .GridVenta .GridVenta_header .content-search .content-table {
+        position: relative;
+        left: 20px;
+        width: 40%;
+        max-height: 300px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-left: 10px;
+        padding-left: 10px;
+        overflow-y: visible;
+        overflow-x: hidden; }
+        .GridVenta .GridVenta_header .content-search .content-table .tabla-buscador table {
+          width: 100%; }
+        .GridVenta .GridVenta_header .content-search .content-table .tabla-buscador thead {
+          display: none; }
+      .GridVenta .GridVenta_header .content-search #table_length, .GridVenta .GridVenta_header .content-search #table_filter, .GridVenta .GridVenta_header .content-search #table_info, .GridVenta .GridVenta_header .content-search #table_paginate {
+        display: none; }
+    .GridVenta .GridVenta_header .iconoMenu {
+      font-size: 30px;
+      cursor: pointer;
+      display: none; }
+    .GridVenta .GridVenta_header .imenu {
+      display: none; }
+    .GridVenta .GridVenta_header .menu {
+      float: right;
+      height: 50px;
+      display: inline-block; }
+      .GridVenta .GridVenta_header .menu ul {
+        height: 50px;
+        background-color: #C80DDE;
+        display: flex;
+        list-style: none; }
+        .GridVenta .GridVenta_header .menu ul li {
+          height: 50px;
+          display: block;
+          padding: 10px 20px; }
+          .GridVenta .GridVenta_header .menu ul li ul {
+            height: auto;
+            width: 130px;
+            display: none;
+            position: absolute;
+            right: 300px;
+            top: 50px; }
+            .GridVenta .GridVenta_header .menu ul li ul li {
+              padding: 5px;
+              text-align: center;
+              width: 130px;
+              height: auto;
+              position: relative;
+              right: 40px; }
+        .GridVenta .GridVenta_header .menu ul li:hover {
+          background: rgba(0, 0, 0, 0.3); }
+        .GridVenta .GridVenta_header .menu ul li:hover ul {
+          display: block;
+          position: absolute; }
+      .GridVenta .GridVenta_header .menu a {
+        color: black;
+        text-decoration: none; }
+  .GridVenta .GridVenta_titulo {
+    grid-area: titulo; }
+    .GridVenta .GridVenta_titulo h1 {
+      float: right; }
+  .GridVenta .GridVenta_cuerpo {
+    grid-area: cuerpo;
+    display: grid;
+    grid-template-areas: "izquierda derecha" "izquierda SigAtras"; }
+    .GridVenta .GridVenta_cuerpo .GridVenta_productos {
+      grid-area: derecha;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: stretch; }
+      .GridVenta .GridVenta_cuerpo .GridVenta_productos .GridVenta_elemento {
+        width: 350px;
+        margin: 10px;
+        height: 250px;
+        padding: 0px; }
+        .GridVenta .GridVenta_cuerpo .GridVenta_productos .GridVenta_elemento img {
+          border: solid 1px;
+          height: 180px;
+          width: 300px; }
+        .GridVenta .GridVenta_cuerpo .GridVenta_productos .GridVenta_elemento button {
+          width: 100%; }
+    .GridVenta .GridVenta_cuerpo .GridVenta_filtros {
+      grid-area: izquierda;
+      width: 200px;
+      padding-top: 50px;
+      padding-left: 10px;
+      background-color: #D0C6D5;
+      margin: 0px; }
+    .GridVenta .GridVenta_cuerpo .container {
+      grid-area: SigAtras; }
+  .GridVenta .GridVenta_footer {
+    grid-area: footer;
+    background-color: #C80DDE;
+    height: 58px; }
+    .GridVenta .GridVenta_footer ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 5px; }
+      .GridVenta .GridVenta_footer ul li {
+        display: inline; }
+
+/*galeria*/
+.GridGaleria {
+  display: grid;
+  grid-template-areas: "header header" "titulo titulo" "cuerpo cuerpo" "footer footer"; }
+  .GridGaleria .GridGaleria_header {
+    grid-area: header;
+    background-color: #C80DDE;
+    height: 50px;
+    width: auto; }
+    .GridGaleria .GridGaleria_header #input-search {
+      margin-top: 10px;
+      margin-left: 30px;
+      width: 40%;
+      height: 30px;
+      font-size: 20px;
+      text-indent: 10px;
+      display: inline-block;
+      background-color: #D0C6D5;
+      border-radius: 20px; }
+    .GridGaleria .GridGaleria_header .content-search {
+      width: 100%;
+      display: none; }
+      .GridGaleria .GridGaleria_header .content-search a {
+        color: #fff;
+        text-decoration: none; }
+      .GridGaleria .GridGaleria_header .content-search td {
+        padding: 5px;
+        height: 30px;
+        display: block; }
+      .GridGaleria .GridGaleria_header .content-search td:hover {
+        background: rgba(0, 0, 0, 0.3); }
+      .GridGaleria .GridGaleria_header .content-search .content-table {
+        position: relative;
+        left: 20px;
+        width: 40%;
+        max-height: 300px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-left: 10px;
+        padding-left: 10px;
+        overflow-y: visible;
+        overflow-x: hidden; }
+        .GridGaleria .GridGaleria_header .content-search .content-table .tabla-buscador table {
+          width: 100%; }
+        .GridGaleria .GridGaleria_header .content-search .content-table .tabla-buscador thead {
+          display: none; }
+      .GridGaleria .GridGaleria_header .content-search #table_length, .GridGaleria .GridGaleria_header .content-search #table_filter, .GridGaleria .GridGaleria_header .content-search #table_info, .GridGaleria .GridGaleria_header .content-search #table_paginate {
+        display: none; }
+    .GridGaleria .GridGaleria_header .iconoMenu {
+      font-size: 30px;
+      cursor: pointer;
+      display: none; }
+    .GridGaleria .GridGaleria_header .imenu {
+      display: none; }
+    .GridGaleria .GridGaleria_header .menu {
+      float: right;
+      height: 50px;
+      display: inline-block; }
+      .GridGaleria .GridGaleria_header .menu ul {
+        height: 50px;
+        background-color: #C80DDE;
+        display: flex;
+        list-style: none; }
+        .GridGaleria .GridGaleria_header .menu ul li {
+          height: 50px;
+          display: block;
+          padding: 10px 20px; }
+          .GridGaleria .GridGaleria_header .menu ul li ul {
+            height: auto;
+            width: 130px;
+            display: none;
+            position: absolute;
+            right: 300px;
+            top: 50px; }
+            .GridGaleria .GridGaleria_header .menu ul li ul li {
+              padding: 5px;
+              text-align: center;
+              width: 130px;
+              height: auto;
+              position: relative;
+              right: 40px; }
+        .GridGaleria .GridGaleria_header .menu ul li:hover {
+          background: rgba(0, 0, 0, 0.3); }
+        .GridGaleria .GridGaleria_header .menu ul li:hover ul {
+          display: block;
+          position: absolute; }
+      .GridGaleria .GridGaleria_header .menu a {
+        color: black;
+        text-decoration: none; }
+  .GridGaleria .GridGaleria_titulo {
+    grid-area: titulo; }
+    .GridGaleria .GridGaleria_titulo h1 {
+      float: right; }
+  .GridGaleria .GridGaleria_cuerpo {
+    grid-area: cuerpo; }
+    .GridGaleria .GridGaleria_cuerpo .GridGaleria_flex {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: space-evenly;
+      align-items: center; }
+      .GridGaleria .GridGaleria_cuerpo .GridGaleria_flex img {
+        border: solid 1px;
+        margin: 3px; }
+  .GridGaleria .GridGaleria_footer {
+    grid-area: footer;
+    background-color: #C80DDE;
+    height: 58px; }
+    .GridGaleria .GridGaleria_footer ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 5px; }
+      .GridGaleria .GridGaleria_footer ul li {
+        display: inline; }
+
+.GridContacto {
+  display: grid;
+  grid-template-areas: "header header" "titulo titulo" "cuerpo cuerpo" "footer footer";
+  grid-template-columns: 50% 50%; }
+  .GridContacto .GridContacto_header {
+    grid-area: header;
+    background-color: #C80DDE;
+    height: 50px;
+    width: auto; }
+    .GridContacto .GridContacto_header #input-search {
+      margin-top: 10px;
+      margin-left: 30px;
+      width: 40%;
+      height: 30px;
+      font-size: 20px;
+      text-indent: 10px;
+      display: inline-block;
+      background-color: #D0C6D5;
+      border-radius: 20px; }
+    .GridContacto .GridContacto_header .content-search {
+      width: 40%;
+      display: none; }
+      .GridContacto .GridContacto_header .content-search a {
+        color: #fff;
+        text-decoration: none; }
+      .GridContacto .GridContacto_header .content-search td {
+        padding: 5px;
+        height: 30px;
+        display: block; }
+      .GridContacto .GridContacto_header .content-search td:hover {
+        background: rgba(0, 0, 0, 0.3); }
+      .GridContacto .GridContacto_header .content-search .content-table {
+        position: relative;
+        left: 20px;
+        width: 100%;
+        max-height: 300px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-left: 10px;
+        padding-left: 10px;
+        overflow-y: visible;
+        overflow-x: hidden; }
+        .GridContacto .GridContacto_header .content-search .content-table .tabla-buscador table {
+          width: 100%; }
+        .GridContacto .GridContacto_header .content-search .content-table .tabla-buscador thead {
+          display: none; }
+      .GridContacto .GridContacto_header .content-search #table_length, .GridContacto .GridContacto_header .content-search #table_filter, .GridContacto .GridContacto_header .content-search #table_info, .GridContacto .GridContacto_header .content-search #table_paginate {
+        display: none; }
+    .GridContacto .GridContacto_header .iconoMenu {
+      font-size: 30px;
+      cursor: pointer;
+      display: none; }
+    .GridContacto .GridContacto_header .imenu {
+      display: none; }
+    .GridContacto .GridContacto_header .menu {
+      float: right;
+      height: 50px;
+      display: inline-block; }
+      .GridContacto .GridContacto_header .menu ul {
+        height: 50px;
+        background-color: #C80DDE;
+        display: flex;
+        list-style: none; }
+        .GridContacto .GridContacto_header .menu ul li {
+          height: 50px;
+          display: block;
+          padding: 10px 20px; }
+          .GridContacto .GridContacto_header .menu ul li ul {
+            height: auto;
+            width: 130px;
+            display: none;
+            position: absolute;
+            right: 300px;
+            top: 50px; }
+            .GridContacto .GridContacto_header .menu ul li ul li {
+              padding: 5px;
+              text-align: center;
+              width: 130px;
+              height: auto;
+              position: relative;
+              right: 40px; }
+        .GridContacto .GridContacto_header .menu ul li:hover {
+          background: rgba(0, 0, 0, 0.3); }
+        .GridContacto .GridContacto_header .menu ul li:hover ul {
+          display: block;
+          position: absolute; }
+      .GridContacto .GridContacto_header .menu a {
+        color: black;
+        text-decoration: none; }
+  .GridContacto .GridContacto_titulo {
+    grid-area: titulo; }
+    .GridContacto .GridContacto_titulo h1 {
+      float: right; }
+  .GridContacto .GridContacto_cuerpo {
+    grid-area: cuerpo;
+    display: grid;
+    grid-template-areas: "izquierda derecha";
+    height: 600px; }
+    .GridContacto .GridContacto_cuerpo .GridContacto_detalles {
+      grid-area: derecha;
+      font-size: 25px;
+      margin-top: 5%; }
+      .GridContacto .GridContacto_cuerpo .GridContacto_detalles iframe {
+        border: solid 1px;
+        width: 95%;
+        height: 65%; }
+    .GridContacto .GridContacto_cuerpo .GridContacto_formulario {
+      grid-area: izquierda;
+      margin-top: 10%; }
+      .GridContacto .GridContacto_cuerpo .GridContacto_formulario ul {
+        list-style: none; }
+        .GridContacto .GridContacto_cuerpo .GridContacto_formulario ul input {
+          width: 90%;
+          height: 30px; }
+        .GridContacto .GridContacto_cuerpo .GridContacto_formulario ul #checkbox {
+          margin-bottom: 5px;
+          display: block; }
+          .GridContacto .GridContacto_cuerpo .GridContacto_formulario ul #checkbox div {
+            display: inline-block; }
+          .GridContacto .GridContacto_cuerpo .GridContacto_formulario ul #checkbox input {
+            display: inline;
+            height: 20px;
+            width: 20px; }
+        .GridContacto .GridContacto_cuerpo .GridContacto_formulario ul textarea {
+          width: 90.4%;
+          height: 148px; }
+  .GridContacto .GridContacto_footer {
+    grid-area: footer;
+    background-color: #C80DDE;
+    height: 58px; }
+    .GridContacto .GridContacto_footer ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 5px; }
+      .GridContacto .GridContacto_footer ul li {
+        display: inline; }
+
+@media (max-width: 850px) {
+  .GridIndex {
+    max-width: 100%; }
+    .GridIndex .GridIndex_header #input-search {
+      position: relative;
+      top: 0px;
+      left: 5px;
+      width: 80%; }
+    .GridIndex .GridIndex_header .iconoMenu {
+      display: inline;
+      padding-right: 5px;
+      float: right; }
+    .GridIndex .GridIndex_header .menu {
+      height: 250px;
+      width: 40%;
+      padding: 0px;
+      transform: translateX(500%);
+      transition: all 0.3s;
+      display: none; }
+      .GridIndex .GridIndex_header .menu ul {
+        margin: 0px;
+        width: 100%;
+        position: relative;
+        top: 10px;
+        right: -55px;
+        height: 250px;
+        display: block; }
+        .GridIndex .GridIndex_header .menu ul li {
+          margin: 0px;
+          width: 117%;
+          position: relative;
+          left: -40px; }
+          .GridIndex .GridIndex_header .menu ul li ul {
+            position: relative;
+            top: 0px;
+            right: 100%;
+            border: solid 1px; }
+    .GridIndex .GridIndex_header #imenu:checked ~ .menu {
+      display: block;
+      transform: translateX(0%); } }

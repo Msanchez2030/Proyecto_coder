@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Tus instrumentos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <div class="body">  
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="pages/aire.html"><img src="img\saxo.jpg"alt="Los Angeles" width="100%" height="510"></a>
+                </div>
+                <div class="carousel-item">
+                     <a href="pages/percucion.html"><img src="img\equipo_sonido.png" alt="Chicago" width="100%" height="510"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="pages/cuerda.html"><img src="img\bajo.jpg" alt="New York" width="100%" height="510"></a>
+                </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    	<!--MENU SUPERIOR-->
+        <section class="GridIndex">
+        	<header class="GridIndex_header">
+                <input type="checkbox" id="imenu">
+                    <label for="imenu" class="iconoMenu"><img src="img/menu.png" alt=""></label>
+                        <input type="search" id="input-search" placeholder="Buscar...">
+                        <div class="menu">
+                            <ul>
+                                <a href="Index.html"><li>Inicio</li></a>
+                                <li>categorias
+                                    <ul>
+                                      <a href="pages/aire.html"><li>instrumentos de aire</li></a>
+                                      <a href="pages/cuerda.html"><li>instrumentos de cuerda</li></a>
+                                      <a href="pages/percucion.html"><li>instrumentos de percucion</li></a>
+                                      <a href="pages/accesorios.html"><li>accesorios</li></a>
+                                   </ul>
+                                </li>
+                                <a href="pages/galeria.html"><li>Galeria</li></a>
+                                <a href="pages/Contacto.html"><li>Contacto</li></a>
+                                <a href="pages/Nosotros.html"><li>Sobre Nosotros</li></a>  
+                            </ul>
+                        </div> 	
+            	<div class="content-search">
+                	<div class="content-table">
+                	    <table id="table">
+                	        <thead>
+                	            <tr>
+                	                <td></td>
+                	            </tr>
+                	        </thead>
+                	        
+                	        <tbody class="tabla_buscador">
+                            <tr>
+                                <td><a href="#">Inicio</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/aire.html">Instrumentos de viento</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/aire.html#footer">Trompeta</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/aire.html#trompa">Trompa</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/aire.html#trombon">Trombon</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/aire.html#saxo">Saxofon</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/aire.html#armonica">Armonica</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/aire.html#flauta">Flauta travesera</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/cuerda.html">Instrumentos de cuerda</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/cuerda.html#guitarra_crioll">Guitarra criolla</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/cuerda.html#guitarra_elec">Guitarra elctrica</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/cuerda.html#ukelele">Ukelele</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/cuerda.html#piano">Piano</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/cuerda.html#violonchelo">Violonchelo</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/cuerda.html#violin">violin</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/percucion.html">Instrumento de percucion</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/percucion.html#Bateria">Bateria</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/percucion.html#bombo">Bombo</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/percucion.html#bongo">Bongo</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/percucion.html#Timbales">Timbales</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/percucion.html#redoblante">Redoblante</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/percucion.html#tumbadores">Tumbadores</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/accesorios.html">Accesorios</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/accesorios.html#puas">Puas</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/accesorios.html#amplificador">Amplificador</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/accesorios.html#silenciador">Silenciador</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/accesorios.html#boquilla">Boquilla</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/accesorios.html#pedal_bombo">Pedal para bombo</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/accesorios.html#palillos">Palillos</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/contacto.html#mapa">Mapa</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/contacto.html">Contacto</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pages/contacto.html#consulta">Consulta</a></td>
+                            </tr>
+                        </tbody>
+                	    </table>
+                	</div>
+           	 	</div>
+        	</header>
+    	   <!--Cuerpo-->
+                <div class="GridIndex_titulo">
+            	   <h1>El buen sonar!!</h1>
+                </div>
+            <div class="GridIndex_cuerpo">
+                <div class="GridIndex_izquierda">
+                    <p class="GridIndex_texto">
+                        "Eres la llave inmortal que abre este mental presidio
+                        Desde Tearz de Wu Tang Clan hasta el Ojalá de Silvio
+                        Envidio el poder que impones en canciones
+                        Despiertas mis emociones, con creaciones de Ennio Morricone.
+                    </p>
+                    <p class="GridIndex_texto">
+                        Sensaciones sin control cuando eres Rock n' Roll
+                        El erotismo de un bemol en la voz de Diana Krall
+                        El solo de guitarra eléctrica que el silencio rompe
+                        La armónica que esconden las manos de Steve Wonder.
+                    </p>
+                    <p class="GridIndex_texto">
+                        Te vi donde todo acaba, inhalas ira con Black Sabbath
+                        Respiras vida con la calma que inspira Bob Dylan
+                        Oscilas y posees a James Brown mueves su cuerpo
+                        Junto a Freddy Mercury y Ray Charles, jamás habrán muerto.
+                    </p>
+                    <p class="GridIndex_texto">
+                        Y es cierto da igual que suenes con un arpa o un Akai
+                        Con la clase de Frank Sinatra o de Barry White
+                        Eres la métrica enigmática que envuelve mi ser y lo salva
+                        El idioma con el que los dioses hablan
+                        Eres música."
+                    </p>
+                    <p class="GridIndex_autor"><b>Nach-El idioma de los dioses.</b></p>
+                </div>
+            	<div class="GridIndex_derecha">
+            		<div class="GridIndex_derecha_contenedor" id="Inicio">
+            			<h3><a href="pages/aire.html">Instrumentos de aire</a></h3>
+            	    		<a href="pages/aire.html"><img class="img-trans" src="img\trompeta.jpg" alt=""></a>
+            	    		<a href="pages/aire.html"><img class="img-trans" src="img\saxo.jpg" alt="" width="45%"></a>
+            	   		    <p>Instrumentos de aire de todo tipo, trompetas, saxofon, flautas, etc. Cualquier pregunta no dude en preguntar. <a href="pages/Contacto.html">Aqui se encuentra la seccion de consulta.</a></p>
+            	   	</div>
+            	   	<div class="GridIndex_derecha_contenedor">	    
+            			<h3><a href="pages/cuerda.html">Instrumentos de cuerda</a></h3>
+            	    		<a href="pages/cuerda.html"><img class="img-trans" src="img\guitarra.jpg" alt=""></a>
+            	    		<a href="pages/cuerda.html"><img class="img-trans" src="img\violonchelo.jpg" alt=""></a>
+            	    		<p>Instrumentos de cuerda de todo tipo, guitarra, ukelele, violonchelo, etc. Cualquier pregunta no dude en preguntar. <a href="pages/Contacto.html">Aqui se encuentra la seccion de consulta.</a></p>
+            		</div>
+            		<div class="GridIndex_derecha_contenedor">	
+            			<h3><a href="pages/percucion.html">Instrumentos de percucion</a></h3>
+            	    		<a href="pages/percucion.html"><img class="img-trans" src="img\bateria.jpg" alt=""></a>
+            	    		<a href="pages/percucion.html"><img class="img-trans" src="img\bongo.jpg" alt="" ></a>
+            	    		<p>Instrumentos de percucion de todo tipo, baterias, tumbadores, bongos, etc. Cualquier pregunta no dude en preguntar. <a href="pages/Contacto.html">Aqui se encuentra la seccion de consulta.</a></p>
+            	    </div>		
+            	</div>
+            </div>   	
+    	   <div class="GridIndex_footer">
+        		<ul>
+        			<li><a target="_blank" href="https://www.facebook.com"><img src="img/iconoface.png" alt=""></a></li>
+        			<li><a target="_blank" href="https://www.Twitter.com"><img src="img/iconotwit.png" alt=""></a></li>
+        			<li><a target="_blank" href="https://www.Instagram.com"><img src="img/iconoinst.png" alt=""></a></li>
+        		</ul>
+    	   </div>
+        </section>
+        <script src="js/search.js"></script>
+    </div>
+    
+</body>
+</html>

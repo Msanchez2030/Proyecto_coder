@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Instrumentos de viento</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery.dataTables.min.js"></script>
+    </head>
+    <body>
+        <div class="body">
+            <section class="GridVenta">
+            	<header class="GridVenta_header">
+            		<div>
+            				
+            			<input type="search" id="input-search" placeholder="Buscar...">
+                
+                        <div class="content-search">
+                            <div class="content-table">
+                                <table id="table">
+                                    <thead>
+                                        <tr>
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="../index.html">Inicio</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">Instrumentos de viento</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#footer">Trompeta</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#trompa">Trompa</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#trombon">Trombon</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#saxo">Saxofon</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#armonica">Armonica</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#flauta">Flauta travesera</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="cuerda.html">Instrumentos de cuerda</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="cuerda.html/#guitarra_crioll">Guitarra criolla</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="cuerda.html/#guitarra_elec">Guitarra elctrica</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="cuerda.html/#ukelele">Ukelele</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="cuerda.html/#piano">Piano</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="cuerda.html/#violonchelo">Violonchelo</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="cuerda.html/#violin">violin</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="percucion.html">Instrumento de percucion</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="percucion.html/#Bateria">Bateria</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="percucion.html/#bombo">Bombo</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="percucion.html/#bongo">Bongo</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="percucion.html/#Timbales">Timbales</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="percucion.html/#redoblante">Redoblante</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="percucion.html/#tumbadores">Tumbadores</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="accesorios.html">Accesorios</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="accesorios.html/#puas">Puas</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="accesorios.html/#amplificador">Amplificador</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="accesorios.html/#silenciador">Silenciador</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="accesorios.html/#boquilla">Boquilla</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="accesorios.html/#pedal_bombo">Pedal para bombo</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="accesorios.html/#palillos">Palillos</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="contacto.html/#mapa">Mapa</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="contacto.html">Contacto</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="contacto.html/#consulta">Consulta</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+            			<div class="menu">
+            				<ul>
+            					<a href="../Index.html"><li>Inicio</li></a>
+            					<li>categorias<ul>
+            						<a href="aire.html"><li>instrumentos de aire</li></a>
+            						<a href="cuerda.html"><li>instrumentos de cuerda</li></a>
+            						<a href="percucion.html"><li>instrumentos de percucion</li></a>
+            						<a href="accesorios.html"><li>accesorios</li></a>
+            					</ul></li>
+            					<a href="galeria.html"><li>Galeria</li></a>
+            					<a href="Contacto.html"><li>Contacto</li></a>
+            					<a href="Nosotros.html"><li>Sobre Nosotros</li></a>
+            				</ul>
+            			</div>
+            		</div>
+            	</header>
+                <div class="GridVenta_titulo">
+                	<h1 id="aire">Instrumentos de viento</h1>
+                </div>
+                <div class="GridVenta_cuerpo">
+                    <div class="GridVenta_productos">
+                        <div class="container GridVenta_elemento" id="trompeta">
+                          <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            <div>
+                                <img src="../img/trompeta.jpg" alt=""><h3>Trompeta</h3>
+                                    $17.000
+                            </div>
+                            </button>
+                        
+                          <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                              
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                          <h4 class="modal-title">Modal Heading</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                          Modal body..
+                                        </div>
+                                        
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container GridVenta_elemento" id="trompa">
+                          <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            <div>
+                                <img src="../img/trompa.jpg" alt=""><h3>Trompa</h3>
+                                $100.000
+                            </div>
+                            </button>
+                        
+                          <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                              
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                          <h4 class="modal-title">Modal Heading</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                          Modal body..
+                                        </div>
+                                        
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container GridVenta_elemento" id="trombon">
+                          <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                              <div>
+                                  <img src="../img/trombon.jpg" alt=""><h3>Trombon</h3>
+                                  $30.000
+                              </div>
+                            </button>
+                        
+                          <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                          <h4 class="modal-title">Modal Heading</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                          Modal body..
+                                        </div>
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container GridVenta_elemento" id="armonica">
+                          <!-- Button to Open the Modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            <div>
+                                <img src="../img/armonica.jpg" alt=""><h3>Armonica</h3>
+                                    $600
+                            </div>
+                          </button>
+                        
+                          <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                          <h4 class="modal-title">Modal Heading</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                          Modal body..
+                                        </div>
+                                        
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container GridVenta_elemento" id="saxo">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                              <div>
+                                  <img src="../img/saxo.jpg" alt=""><h3>Saxofon</h3>
+                                      $50.000
+                              </div>
+                            </button>
+                                  <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                          <h4 class="modal-title">Modal Heading</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                          Modal body..
+                                        </div>
+                                        
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container GridVenta_elemento" id="flauta">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                <div>
+                                    <img src="../img/flauta.jpg" alt=""><h3>Flauta travesera</h3>
+                                    $17.000
+                                </div>
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                              <div class="modal-content">
+                              
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Modal Heading</h4>
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                  Modal body..
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                
+                              </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="GridVenta_filtros">
+                        <div>Instrumentos</div>
+                        <ul>
+                            <li>guitarra</li>
+                            <li>violin</li>
+                            <li>violonchelo</li>
+                            <li>ukelele</li>
+                        </ul>
+                        <div>Marcas</div>
+                        <ul>
+                            <li>Yamaha</li>
+                            <li>Forenza</li>
+                            <li>Tongling</li>
+                            <li>Kala</li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">Anterior</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">Siguiente</a></li>
+                        </ul>
+                    </div>
+                </div>
+            	<div class="GridVenta_footer">
+            		<ul>
+            			<li><a target="_blank" href="https://www.facebook.com"><img src="../img/iconoface.png" alt=""></a></li>
+            			<li><a target="_blank" href="https://www.Twitter.com"><img src="../img/iconotwit.png" alt=""></a></li>
+            			<li><a target="_blank" href="https://www.Instagram.com"><img src="../img/iconoinst.png" alt=""></a></li>
+            		</ul>
+            	</div>
+            </section>
+        </div>
+        <script src="../js/search.js"></script>
+    </body>
+</html>
