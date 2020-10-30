@@ -5,7 +5,8 @@
   margin: 0;
   width: 100%;
   height: auto;
-  max-width: 100%; }
+  max-width: 100%;
+  background-color: #fff2e1; }
 
 /*index*/
 .GridIndex {
@@ -99,7 +100,8 @@
   .GridIndex .GridIndex_titulo {
     grid-area: titulo; }
     .GridIndex .GridIndex_titulo h1 {
-      float: right; }
+      float: right;
+      padding: 15px; }
   .GridIndex .GridIndex_cuerpo {
     grid-area: cuerpo;
     display: flex;
@@ -107,10 +109,21 @@
     margin: 10px; }
     .GridIndex .GridIndex_cuerpo .GridIndex_izquierda {
       width: 50%;
-      padding: 7%; }
+      padding: 10% 10px;
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+      background-color: black; }
     .GridIndex .GridIndex_cuerpo .GridIndex_derecha {
       display: flex;
       flex-direction: column; }
+      .GridIndex .GridIndex_cuerpo .GridIndex_derecha .GridIndex_derecha_contenedor {
+        background-color: #D0C6D5;
+        padding: 10px;
+        text-align: center; }
+        .GridIndex .GridIndex_cuerpo .GridIndex_derecha .GridIndex_derecha_contenedor img {
+          width: 45%;
+          height: 70%; }
   .GridIndex .GridIndex_footer {
     grid-area: footer;
     background-color: #C80DDE;
@@ -175,7 +188,7 @@
       font-size: 30px;
       cursor: pointer;
       display: none; }
-    .GridVenta .GridVenta_header .imenu {
+    .GridVenta .GridVenta_header #imenu {
       display: none; }
     .GridVenta .GridVenta_header .menu {
       float: right;
@@ -215,7 +228,8 @@
   .GridVenta .GridVenta_titulo {
     grid-area: titulo; }
     .GridVenta .GridVenta_titulo h1 {
-      float: right; }
+      float: right;
+      padding: 15px; }
   .GridVenta .GridVenta_cuerpo {
     grid-area: cuerpo;
     display: grid;
@@ -237,7 +251,8 @@
           height: 180px;
           width: 300px; }
         .GridVenta .GridVenta_cuerpo .GridVenta_productos .GridVenta_elemento button {
-          width: 100%; }
+          width: 100%;
+          background-color: #C80DDE; }
     .GridVenta .GridVenta_cuerpo .GridVenta_filtros {
       grid-area: izquierda;
       width: 200px;
@@ -311,7 +326,7 @@
       font-size: 30px;
       cursor: pointer;
       display: none; }
-    .GridGaleria .GridGaleria_header .imenu {
+    .GridGaleria .GridGaleria_header #imenu {
       display: none; }
     .GridGaleria .GridGaleria_header .menu {
       float: right;
@@ -351,17 +366,21 @@
   .GridGaleria .GridGaleria_titulo {
     grid-area: titulo; }
     .GridGaleria .GridGaleria_titulo h1 {
-      float: right; }
+      float: right;
+      padding: 15px; }
   .GridGaleria .GridGaleria_cuerpo {
     grid-area: cuerpo; }
     .GridGaleria .GridGaleria_cuerpo .GridGaleria_flex {
       display: flex;
-      flex-wrap: wrap-reverse;
-      justify-content: space-evenly;
-      align-items: center; }
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
       .GridGaleria .GridGaleria_cuerpo .GridGaleria_flex img {
         border: solid 1px;
-        margin: 3px; }
+        margin: 3px;
+        width: 30%;
+        height: 200px; }
+      .GridGaleria .GridGaleria_cuerpo .GridGaleria_flex img:hover {
+        transform: scale(1.2); }
   .GridGaleria .GridGaleria_footer {
     grid-area: footer;
     background-color: #C80DDE;
@@ -426,7 +445,7 @@
       font-size: 30px;
       cursor: pointer;
       display: none; }
-    .GridContacto .GridContacto_header .imenu {
+    .GridContacto .GridContacto_header #imenu {
       display: none; }
     .GridContacto .GridContacto_header .menu {
       float: right;
@@ -466,12 +485,13 @@
   .GridContacto .GridContacto_titulo {
     grid-area: titulo; }
     .GridContacto .GridContacto_titulo h1 {
-      float: right; }
+      float: right;
+      padding: 15px; }
   .GridContacto .GridContacto_cuerpo {
     grid-area: cuerpo;
     display: grid;
     grid-template-areas: "izquierda derecha";
-    height: 600px; }
+    height: auto; }
     .GridContacto .GridContacto_cuerpo .GridContacto_detalles {
       grid-area: derecha;
       font-size: 25px;
@@ -479,24 +499,22 @@
       .GridContacto .GridContacto_cuerpo .GridContacto_detalles iframe {
         border: solid 1px;
         width: 95%;
-        height: 65%; }
+        height: 350px;
+        margin-bottom: 10px; }
     .GridContacto .GridContacto_cuerpo .GridContacto_formulario {
-      grid-area: izquierda;
-      margin-top: 10%; }
+      grid-area: izquierda; }
       .GridContacto .GridContacto_cuerpo .GridContacto_formulario ul {
         list-style: none; }
         .GridContacto .GridContacto_cuerpo .GridContacto_formulario ul input {
           width: 90%;
-          height: 30px; }
+          height: 60px; }
         .GridContacto .GridContacto_cuerpo .GridContacto_formulario ul #checkbox {
           margin-bottom: 5px;
-          display: block; }
+          display: inline;
+          height: 20px;
+          width: 20px; }
           .GridContacto .GridContacto_cuerpo .GridContacto_formulario ul #checkbox div {
             display: inline-block; }
-          .GridContacto .GridContacto_cuerpo .GridContacto_formulario ul #checkbox input {
-            display: inline;
-            height: 20px;
-            width: 20px; }
         .GridContacto .GridContacto_cuerpo .GridContacto_formulario ul textarea {
           width: 90.4%;
           height: 148px; }
@@ -551,4 +569,303 @@
             border: solid 1px; }
     .GridIndex .GridIndex_header #imenu:checked ~ .menu {
       display: block;
+      transform: translateX(0%); }
+    .GridIndex .GridIndex_cuerpo .GridIndex_derecha img {
+      width: 60%;
+      height: auto;
+      margin: 3px; }
+  .GridVenta {
+    max-width: 100%; }
+    .GridVenta .GridVenta_header #input-search {
+      position: relative;
+      top: 0px;
+      left: 5px;
+      width: 80%; }
+    .GridVenta .GridVenta_header .iconoMenu {
+      display: inline;
+      padding-right: 5px;
+      float: right; }
+    .GridVenta .GridVenta_header .menu {
+      height: 250px;
+      width: 40%;
+      padding: 0px;
+      transform: translateX(500%);
+      transition: all 0.3s;
+      display: none; }
+      .GridVenta .GridVenta_header .menu ul {
+        margin: 0px;
+        width: 100%;
+        position: relative;
+        top: 10px;
+        right: -55px;
+        height: 250px;
+        display: block; }
+        .GridVenta .GridVenta_header .menu ul li {
+          margin: 0px;
+          width: 117%;
+          position: relative;
+          left: -40px; }
+          .GridVenta .GridVenta_header .menu ul li ul {
+            position: relative;
+            top: 0px;
+            right: 100%;
+            border: solid 1px; }
+    .GridVenta .GridVenta_header #imenu:checked ~ .menu {
+      display: block;
+      transform: translateX(0%); }
+    .GridVenta .GridVenta_cuerpo .GridVenta_productos .GridVenta_elemento {
+      width: 45%;
+      height: auto; }
+      .GridVenta .GridVenta_cuerpo .GridVenta_productos .GridVenta_elemento img {
+        width: 95%; }
+  .GridGaleria {
+    max-width: 100%; }
+    .GridGaleria .GridGaleria_header #input-search {
+      position: relative;
+      top: 0px;
+      left: 5px;
+      width: 80%; }
+    .GridGaleria .GridGaleria_header .iconoMenu {
+      display: inline;
+      padding-right: 5px;
+      float: right; }
+    .GridGaleria .GridGaleria_header .menu {
+      height: 250px;
+      width: 40%;
+      padding: 0px;
+      transform: translateX(500%);
+      transition: all 0.3s;
+      display: none; }
+      .GridGaleria .GridGaleria_header .menu ul {
+        margin: 0px;
+        width: 100%;
+        position: relative;
+        top: 10px;
+        right: -55px;
+        height: 250px;
+        display: block; }
+        .GridGaleria .GridGaleria_header .menu ul li {
+          margin: 0px;
+          width: 117%;
+          position: relative;
+          left: -40px; }
+          .GridGaleria .GridGaleria_header .menu ul li ul {
+            position: relative;
+            top: 0px;
+            right: 100%;
+            border: solid 1px; }
+    .GridGaleria .GridGaleria_header #imenu:checked ~ .menu {
+      display: block;
+      transform: translateX(0%); }
+  .GridContacto {
+    max-width: 100%; }
+    .GridContacto .GridContacto_header #input-search {
+      position: relative;
+      top: 0px;
+      left: 5px;
+      width: 80%; }
+    .GridContacto .GridContacto_header .iconoMenu {
+      display: inline;
+      padding-right: 5px;
+      float: right; }
+    .GridContacto .GridContacto_header .menu {
+      height: 250px;
+      width: 40%;
+      padding: 0px;
+      transform: translateX(500%);
+      transition: all 0.3s;
+      display: none; }
+      .GridContacto .GridContacto_header .menu ul {
+        margin: 0px;
+        width: 100%;
+        position: relative;
+        top: 10px;
+        right: -55px;
+        height: 250px;
+        display: block; }
+        .GridContacto .GridContacto_header .menu ul li {
+          margin: 0px;
+          width: 117%;
+          position: relative;
+          left: -40px; }
+          .GridContacto .GridContacto_header .menu ul li ul {
+            position: relative;
+            top: 0px;
+            right: 100%;
+            border: solid 1px; }
+    .GridContacto .GridContacto_header #imenu:checked ~ .menu {
+      display: block;
       transform: translateX(0%); } }
+
+@media (max-width: 550px) {
+  .GridIndex {
+    max-width: 100%; }
+    .GridIndex .GridIndex_header #input-search {
+      position: relative;
+      top: 0px;
+      left: 5px;
+      width: 60%; }
+    .GridIndex .GridIndex_header .iconoMenu {
+      display: inline;
+      padding-right: 5px;
+      float: right; }
+    .GridIndex .GridIndex_header .menu {
+      height: 250px;
+      width: 40%;
+      padding: 0px;
+      transform: translateX(500%);
+      transition: all 0.3s;
+      display: none; }
+      .GridIndex .GridIndex_header .menu ul {
+        margin: 0px;
+        width: 100%;
+        position: relative;
+        top: 10px;
+        right: -55px;
+        height: 250px;
+        display: block; }
+        .GridIndex .GridIndex_header .menu ul li {
+          margin: 0px;
+          width: 117%;
+          position: relative;
+          left: -40px; }
+          .GridIndex .GridIndex_header .menu ul li ul {
+            position: relative;
+            top: 0px;
+            right: 100%;
+            border: solid 1px; }
+    .GridIndex .GridIndex_header #imenu:checked ~ .menu {
+      display: block;
+      transform: translateX(0%); }
+    .GridIndex .GridIndex_cuerpo {
+      flex-direction: column-reverse; }
+      .GridIndex .GridIndex_cuerpo .GridIndex_izquierda {
+        width: 100%;
+        padding: 7%; }
+      .GridIndex .GridIndex_cuerpo .GridIndex_derecha img {
+        width: 80%;
+        height: auto;
+        margin: 3px; }
+  .GridVenta {
+    max-width: 100%; }
+    .GridVenta .GridVenta_header #input-search {
+      position: relative;
+      top: 0px;
+      left: 5px;
+      width: 60%; }
+    .GridVenta .GridVenta_header .iconoMenu {
+      display: inline;
+      padding-right: 5px;
+      float: right; }
+    .GridVenta .GridVenta_header .menu {
+      height: 250px;
+      width: 40%;
+      padding: 0px;
+      transform: translateX(500%);
+      transition: all 0.3s;
+      display: none; }
+      .GridVenta .GridVenta_header .menu ul {
+        margin: 0px;
+        width: 100%;
+        position: relative;
+        top: 10px;
+        right: -55px;
+        height: 250px;
+        display: block; }
+        .GridVenta .GridVenta_header .menu ul li {
+          margin: 0px;
+          width: 117%;
+          position: relative;
+          left: -40px; }
+          .GridVenta .GridVenta_header .menu ul li ul {
+            position: relative;
+            top: 0px;
+            right: 100%;
+            border: solid 1px; }
+    .GridVenta .GridVenta_header #imenu:checked ~ .menu {
+      display: block;
+      transform: translateX(0%); }
+    .GridVenta .GridVenta_cuerpo .GridVenta_filtros {
+      display: none; }
+  .GridGaleria {
+    max-width: 100%; }
+    .GridGaleria .GridGaleria_header #input-search {
+      position: relative;
+      top: 0px;
+      left: 5px;
+      width: 60%; }
+    .GridGaleria .GridGaleria_header .iconoMenu {
+      display: inline;
+      padding-right: 5px;
+      float: right; }
+    .GridGaleria .GridGaleria_header .menu {
+      height: 250px;
+      width: 40%;
+      padding: 0px;
+      transform: translateX(500%);
+      transition: all 0.3s;
+      display: none; }
+      .GridGaleria .GridGaleria_header .menu ul {
+        margin: 0px;
+        width: 100%;
+        position: relative;
+        top: 10px;
+        right: -55px;
+        height: 250px;
+        display: block; }
+        .GridGaleria .GridGaleria_header .menu ul li {
+          margin: 0px;
+          width: 117%;
+          position: relative;
+          left: -40px; }
+          .GridGaleria .GridGaleria_header .menu ul li ul {
+            position: relative;
+            top: 0px;
+            right: 100%;
+            border: solid 1px; }
+    .GridGaleria .GridGaleria_header #imenu:checked ~ .menu {
+      display: block;
+      transform: translateX(0%); }
+  .GridContacto {
+    max-width: 100%; }
+    .GridContacto .GridContacto_header #input-search {
+      position: relative;
+      top: 0px;
+      left: 5px;
+      width: 60%; }
+    .GridContacto .GridContacto_header .iconoMenu {
+      display: inline;
+      padding-right: 5px;
+      float: right; }
+    .GridContacto .GridContacto_header .menu {
+      height: 250px;
+      width: 40%;
+      padding: 0px;
+      transform: translateX(500%);
+      transition: all 0.3s;
+      display: none; }
+      .GridContacto .GridContacto_header .menu ul {
+        margin: 0px;
+        width: 100%;
+        position: relative;
+        top: 10px;
+        right: -55px;
+        height: 250px;
+        display: block; }
+        .GridContacto .GridContacto_header .menu ul li {
+          margin: 0px;
+          width: 117%;
+          position: relative;
+          left: -40px; }
+          .GridContacto .GridContacto_header .menu ul li ul {
+            position: relative;
+            top: 0px;
+            right: 100%;
+            border: solid 1px; }
+    .GridContacto .GridContacto_header #imenu:checked ~ .menu {
+      display: block;
+      transform: translateX(0%); }
+    .GridContacto .GridContacto_cuerpo {
+      grid-template-areas: "izquierda" "derecha"; }
+      .GridContacto .GridContacto_cuerpo iframe {
+        margin-left: 10px; } }

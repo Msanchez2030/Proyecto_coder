@@ -16,7 +16,9 @@
 		<div class="body">
 			<section class="GridContacto">
 				<header class="GridContacto_header">
-					<div>	
+					<div>
+						<input type="checkbox" id="imenu">
+                    <label for="imenu" class="iconoMenu"><img src="../img/menu.png" alt=""></label>
 						<input type="search" id="input-search" placeholder="Buscar...">
 				    <div class="content-search">
 				        <div class="content-table">
@@ -116,8 +118,8 @@
 								<li><input type="email" name="Email" placeholder="Correo electronico"></li>
 								<li><input type="text" name="asunto" placeholder="Asunto"></li>
 								<li><textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escriba aqui su consulta..."></textarea></li>
-								<li id="checkbox"><div>Acepta que le llegue informacion extra al correo.</div>
-									<input type="checkbox" name="Acepta" value="1"></li>
+								<li><label for="checkbox"><div>¿Desea que le llege promociones y descuentos al correo?</div>
+									<input type="checkbox" id="checkbox" name="Acepta" value="1"></label></li>
 								<li><input type="submit" name="envia" value="Enviar consulta"></li>
 							</ul>
 						</form>
