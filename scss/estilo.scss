@@ -1,5 +1,4 @@
-*
-{
+*{
     font-family: Times;
 }
 .body{
@@ -11,6 +10,7 @@
 }
 /*index*/
 .GridIndex{
+	background-color: rgb(24, 24, 24);
 	display: grid;
 	grid-template-areas: 
 	"header header"
@@ -84,7 +84,7 @@
 				display: none;
 			}
 			.menu{ 
-				float: 	right;
+				float: right;
 				height: 50px;
 				display: inline-block;
 				ul{
@@ -102,7 +102,7 @@
 							display: none;
 							position: absolute;
 							right: 300px;
-							top: 560px;
+							top: 50px;
 							li{
 								padding: 5px;
 								text-align: center;
@@ -131,6 +131,7 @@
 	.GridIndex_titulo{
 		grid-area: titulo;
 		h1{
+			color: blanchedalmond;
 			float: right;
 			padding: 15px;
 		}
@@ -179,10 +180,10 @@
 }
 /*viento*/
 .GridVenta{
+	background-color: rgb(24, 24, 24);
 	display: grid;
 	grid-template-areas: 
 	"header header"
-	"titulo titulo"
 	"cuerpo cuerpo"
 	"footer footer";
 	.GridVenta_header{
@@ -204,24 +205,33 @@
 			}
 
 			.content-search{
-				width: 100%;
-			    display: none;
+				width: 40%;
+				display: none;
+				position: relative;
+				top: 15px;
 			    a{
 					color: #fff;
 					text-decoration: none;
 				}
 				td{
+					float: right;
 					padding: 5px;
 					height: 30px;
 					display: block;
+					position: relative;
+					right: 0px;
 				}
 				td:hover{
-					background: rgba(0,0,0,0.3);
+					background: rgba(99, 99, 99, 0.452);
+				}
+				tr{
+					float: right;
+					width: 100%;
 				}
 				.content-table{
 					position: relative;
 					left: 20px;
-					width: 40%;
+					width: 100%;
 					max-height: 300px;
 					height: auto;
 					background-color: rgba(0,0,0,0.6);
@@ -255,7 +265,7 @@
 				height: 50px;
 				display: inline-block;
 				ul{
-					height: 50px;
+					height: 30px;
 					background-color: #C80DDE;
 					display: flex;
 					list-style: none;
@@ -267,7 +277,7 @@
 							height: auto;
 							width: 130px;
 							display: none;
-							position: absolute;
+							position: relative;
 							right: 300px;
 							top: 50px;
 							li{
@@ -295,19 +305,21 @@
 				}
 			}
 	}
-	.GridVenta_titulo{
-		grid-area: titulo;
-		h1{
-			float: right;
-			padding: 15px;
-		}
-	}
 	.GridVenta_cuerpo{
 		grid-area: cuerpo;
 		display: grid;
 		grid-template-areas:
+		"izquierda titulo"
 		"izquierda derecha"
 		"izquierda SigAtras";
+		.GridVenta_titulo{
+			grid-area: titulo;
+			h1{
+				color: blanchedalmond;
+				float: right;
+				padding: 15px;
+			}
+		}
 		.GridVenta_productos{
 			grid-area: derecha;
 			display: flex;
@@ -330,7 +342,14 @@
 					background-color: #C80DDE;
 				}
 			}
-
+			.GridVenta_elemento:hover{
+				img{
+					transform: scale(0.98);
+				}
+				button{
+					background: rgba(226, 54, 149, 0.384);
+				}
+			}
 		}
 		.GridVenta_filtros{
 			grid-area: izquierda;
@@ -342,6 +361,7 @@
 		}
 		.container{
 			grid-area: SigAtras;
+			margin-top: 10px;
 		}
 	}
 	.GridVenta_footer{
@@ -361,6 +381,7 @@
 }
 /*galeria*/
 .GridGaleria{
+	background-color: rgb(24, 24, 24);
 	display: grid;
 	grid-template-areas: 
 	"header header"
@@ -480,6 +501,7 @@
 	.GridGaleria_titulo{
 		grid-area: titulo;
 		h1{
+			color: blanchedalmond;
 			float: right;
 			padding: 15px;
 		}
@@ -492,7 +514,8 @@
     		justify-content: space-evenly;
     		
     		img{
-    			border: solid 1px;
+			border: solid blanchedalmond 1px;
+				border-radius: 7%;
 				margin: 3px;
 				width: 30%;
 				height: 200px;
@@ -519,6 +542,7 @@
 	}
 }
 .GridContacto{
+	background-color: rgb(24, 24, 24);
 	display: grid;
 	grid-template-areas: 
 	"header header"
@@ -592,7 +616,7 @@
 				display: none;
 			}
 			.menu{ 
-				float: 	right;
+				float: right;
 				height: 50px;
 				display: inline-block;
 				ul{
@@ -639,6 +663,7 @@
 	.GridContacto_titulo{
 		grid-area: titulo;
 		h1{
+			color: blanchedalmond;
 			float: right;
 			padding: 15px;
 		}
@@ -653,6 +678,7 @@
 			grid-area: derecha;
 			font-size: 25px;
 			margin-top: 5%;
+			color: blanchedalmond;
 			iframe{
 				border: solid 1px;
     			width: 95%;
@@ -668,24 +694,184 @@
 				input{
 					width: 90%;
 					height: 60px;
+					font-size: 30px;
 				}
 				#checkbox{
 				    margin-bottom: 5px;
 					display: inline;
 					height: 20px;
-				    	width: 20px;
+					width: 20px;
 				    div{
 				    	display: inline-block;
 				    }
 				}
 				textarea{
-					width: 90.4%;
-					height: 148px;
+					width: 90%;
+					height: 150px;
+					font-size: 30px;
 				}
 			}
 		}
 	}
 	.GridContacto_footer{
+		grid-area: footer;
+		background-color: #C80DDE;
+		height: 58px;
+		ul{
+			display: flex;
+			justify-content: center;
+			list-style: none;
+			margin: 5px;
+			li{
+				display: inline;
+			}
+		}
+	}
+}
+.GridNosotros{
+	background-color: rgb(24, 24, 24);
+	display: grid;
+	grid-template-areas: 
+	"header header"
+	"titulo titulo"
+	"cuerpo cuerpo"
+	"footer footer";
+	.GridNosotros_header{
+		grid-area: header;
+		background-color: #C80DDE;
+		height: 50px;
+		width: auto;
+			#input-search{
+				margin-top: 10px;
+				margin-left: 30px;  
+				width: 40%;
+				height: 30px;
+				font-size: 20px;
+				text-indent: 10px;
+				display: inline-block;
+				background-color: #D0C6D5;
+				border-radius: 20px;
+				}
+	
+			.content-search{
+				width: 40%;
+				display: none;
+				a{
+					color: #fff;
+					text-decoration: none;
+				}
+				td{
+					padding: 5px;
+					height: 30px;
+					display: block;
+				}
+				td:hover{
+					background: rgba(0,0,0,0.3);
+				}
+				.content-table{
+					position: relative;
+					left: 20px;
+					width: 100%;
+					max-height: 300px;
+					height: auto;
+					background-color: rgba(0,0,0,0.6);
+					margin-left: 10px;
+					padding-left:10px;
+					overflow-y: visible;
+					overflow-x: hidden;
+					.tabla-buscador{
+						table{
+							width: 100%;
+							}
+							thead{
+								display: none;
+							}
+						}
+					}
+					#table_length, #table_filter, #table_info, #table_paginate{
+								display: none;
+							}
+				}
+				.iconoMenu{
+					font-size: 30px;
+					cursor: pointer;
+					display: none;
+				}
+				#imenu{
+					display: none;
+				}
+				.menu{ 
+					float: right;
+					height: 50px;
+					display: inline-block;
+					ul{
+						height: 50px;
+						background-color: #C80DDE;
+						display: flex;
+						list-style: none;
+						li{
+							height: 50px;
+							display: block;
+							padding: 10px 20px;
+							ul{
+								height: auto;
+								width: 130px;
+								display: none;
+								position: absolute;
+								right: 300px;
+								top: 50px;
+								li{
+									padding: 5px;
+									text-align: center;
+									width: 130px;
+									height: auto;
+									position: relative;
+									right: 40px;
+								}
+							}
+						}
+						li:hover{
+							background: rgba(0,0,0,0.3);
+							
+						}
+						li:hover ul{
+							display: block;
+							position: absolute;
+						}
+					}
+					a{
+						color: black;
+						text-decoration: none;
+					}
+				}
+	}
+	.GridNosotros_titulo{
+		grid-area: titulo;
+		h1{
+			color: blanchedalmond;
+			float: right;
+			padding: 15px;
+		}
+	}
+	.GridNosotros_cuerpo{
+		grid-area: cuerpo;
+		color: blanchedalmond;
+		h3{
+			margin: 30px;
+		}
+		.presentacion{
+			padding: 10%;
+			display: flex;
+			div{
+				width: 50%;
+				margin: 5px;
+			}
+			img{
+				width: 30%;
+			}
+		}
+	}
+	.GridNosotros_footer{
 		grid-area: footer;
 		background-color: #C80DDE;
 		height: 58px;
